@@ -5,6 +5,8 @@ import { Card, CardHeader, Typography, CardContent, Grid, Divider } from '@mater
 import Form from './form/form';
 import List from './list/list';
 import { ExpenseTrackerContext } from '../../context/context';
+import InfoCard from '../infocard';
+
 
 
 const Main = () => {
@@ -16,10 +18,10 @@ const Main = () => {
             <CardHeader title='Expense Tracker' subheader='Powered by Speechly' />
             <CardContent>
                 <Typography align='center' variant='h6'>Total Balance $ {balance}</Typography>
-                <Typography variant='subtitle1' style={{ lineHeight:'1.5em', marginTop: '20px' }}>
-                    Try Saying: Add income $100 dollars category salary for Monday... 
-                </Typography>
-                <Divider />
+                <Typography variant='subtitle1' style={{ lineHeight:'1.5em', marginTop: '10px' }}>
+                    <InfoCard /> 
+                </Typography> 
+                <Divider className={classes.divider}/>
                 <Form />
         </CardContent>
         <CardContent className={classes.cardContent}>
