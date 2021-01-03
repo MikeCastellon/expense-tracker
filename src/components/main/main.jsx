@@ -14,7 +14,7 @@ const Main = () => {
             <CardContent>
                 <Typography align='center' variant='h5'> Total Balance $100</Typography>
                 <Typography variant='subtitle1' style={{ lineHeight:'1.5em', marginTop: '20px' }}>
-                    Try Saying: Add income to for $100 category salary for Monday... 
+                    Try Saying: Add income $100 dollars category salary for Monday... 
                 </Typography>
                 <Divider />
                 <Form />
